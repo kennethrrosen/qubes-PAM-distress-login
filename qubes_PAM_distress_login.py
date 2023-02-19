@@ -11,8 +11,8 @@ import getpass
 import pam
 
 # Set up the SMTP server
-server = smtplib.SMTP('smtp.protonmail.com', 587)
-server.starttls()
+with smtplib.SMTP('smtp.protonmail.com', 587) as server:
+    server.starttls()
 
 # Prompt the user for their login credentials
 username = input('Enter your username: ')
@@ -32,7 +32,7 @@ if pam.authenticate(username, password, service):
         recipients = ['email1@example.com', 'email2@example.com']
         subject = 'Distress signal'
         body = 'I am in need of assistance. Please help.'
-        message = 'Subject: {}\n\n{}'.format(subject, body)
+        message = f'Subject: {subject}\n\n{body}'
 
         # Log in to the ProtonMail SMTP server
         pm_username = 'your-email-address@protonmail.com'
