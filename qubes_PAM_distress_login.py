@@ -1,3 +1,10 @@
+/******
+*    name: Qubes PAM distress login (PROTON)
+*    date: 19 February 2023
+*    NOTES:
+*    see https://github.com/kennethrrosen/ for license and contact.
+******/
+
 
 import smtplib
 import getpass
