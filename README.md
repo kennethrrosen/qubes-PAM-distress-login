@@ -10,7 +10,7 @@ here is a step-by-step guide to set up a system service in Qubes OS to send a di
 sudo pip install pam smtplib
 ```
 
-3. Modify the Python script in this repo to include the ProtonMail SMTP server and your login credentials. Open a text editor in the `emailvm` and create a new file for the script. Replace your-email-address@protonmail.com and your-protonmail-password with your actual ProtonMail email address and password.
+3. Modify the Python script in this repo to include the ProtonMail SMTP server and your login credentials. Open a text editor in the `emailvm` and create a new file for the script. Replace your-email-address@protonmail.com and your-protonmail-password with your actual ProtonMail email address and password (I've also uploaded a version which uses Gmail SMTP instead of ProtonMail SMTP).
 
 4. Save the `qubes-PAM-distress-login` script to a location in `emailvm`, such as /home/user/send_distress_email.py.
 
