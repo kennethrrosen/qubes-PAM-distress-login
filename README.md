@@ -1,7 +1,7 @@
 # qubes-PAM-distress-login
-A simple setup for sending a distress email if forced to login to desktop beyond LUKS passwords
+A simple setup for sending a distress email if forced to login to desktop beyond LUKS passwords.
 
-here is a step-by-step guide to set up a system service in Qubes OS to send a distress email on boot using ProtonMail's SMTP server. The service will run silently in dom0, and will start an AppVM to send the email. The guide assumes you are using Qubes OS 4.x.
+In this example we will set up a system service in QubesOS to send a distress email on boot using ProtonMail's SMTP server. The service will run silently in dom0, and will start an AppVM to send the email. The guide assumes you are using Qubes OS 4.1.
 
 1. Create a new AppVM for email, or use an existing one. For this guide, let's call it `emailvm`.
 
