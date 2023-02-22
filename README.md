@@ -1,5 +1,5 @@
 # qubes-PAM-distress-login
-A simple setup for sending a distress email if forced to login to desktop beyond LUKS passwords.
+A simple setup for sending a distress email if forced to login to desktop beyond LUKS passwords. Requires VPN or sys-net to connect automatically to a known network, i.e. mobile hotspot or public WiFi, preferably in a disposable sys-net.
 
 In this example we will set up a system service in QubesOS to send a distress email on boot using ProtonMail's SMTP server. The service will run silently in dom0, and will start an AppVM to send the email. The guide assumes you are using Qubes OS 4.1.
 
